@@ -1,0 +1,17 @@
+name: Build PDF
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Build PDF with Re:VIEW
+        uses: TechBooster/ReVIEW-build-artifact-action@master
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v7
+        with:
+          name: Output-PDF
+          path: "articles/*.pdf"
