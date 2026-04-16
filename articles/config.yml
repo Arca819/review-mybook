@@ -174,12 +174,12 @@ colophon: true
 # font_ext: ["ttf", "woff", "otf"]
 
 # ソースコードハイライトを利用する (rouge,pygmentsには外部gemが必要)
-# highlight:
-#   html: "rouge"
-#   latex: "listings"
+highlight:
+  html: "rouge"
+  latex: "listings"
 
 # カタログファイル名を指定する
-# catalogfile: catalog.yml
+catalogfile: catalog.yml
 
 # reファイルを格納するディレクトリ。省略した場合は以下 (. はカレントディレクトリを示す)
 # contentdir: .
@@ -198,11 +198,11 @@ contentdir: _refiles
 
 # 図・表・コードリスト・数式のキャプション位置。
 # 値はtop（上）またはbottom（下）でデフォルトは以下のとおり
-# caption_position:
-#   image: bottom
-#   table: top
-#   list: top
-#   equation: top
+caption_position:
+  image: bottom
+  table: top
+  list: top
+  equation: top
 
 # review-toc向けのヒント情報
 # (文字幅を考慮した行数計測には、別途unicode-eaw gemファイルが必要)
@@ -372,11 +372,11 @@ texstyle: ["reviewmacro"]
 # hiddenfolio=nikko-pcは日光企画向けのノドへの隠しノンブル配置
 #
 # B5の設定(10pt 40文字×35行) - 紙版
-texdocumentclass: ["review-jsbook", "media=print,paper=b5,serial_pagination=true,hiddenfolio=nikko-pc,openany,fontsize=10pt,baselineskip=15.4pt,line_length=40zw,number_of_lines=35,head_space=30mm,headsep=10mm,headheight=5mm,footskip=10mm"]
+# texdocumentclass: ["review-jsbook", "media=print,paper=b5,serial_pagination=true,hiddenfolio=nikko-pc,openany,fontsize=10pt,baselineskip=15.4pt,line_length=40zw,number_of_lines=35,head_space=30mm,headsep=10mm,headheight=5mm,footskip=10mm"]
 # B5の設定(10pt 40文字×35行) - 電子版
 # texdocumentclass: ["review-jsbook", "media=ebook,paper=b5,serial_pagination=true,openany,fontsize=10pt,baselineskip=15.4pt,line_length=40zw,number_of_lines=35,head_space=30mm,headsep=10mm,headheight=5mm,footskip=10mm"]
 # A5の設定(9pt 38文字×37行) - 紙版
-# texdocumentclass: ["review-jsbook", "media=print,paper=a5,serial_pagination=true,hiddenfolio=nikko-pc,openany,fontsize=9pt,baselineskip=13pt,line_length=38zw,number_of_lines=37,head_space=15mm,headsep=3mm,headheight=5mm,footskip=10mm"]
+texdocumentclass: ["review-jsbook", "media=print,paper=a5,serial_pagination=true,hiddenfolio=nikko-pc,openany,fontsize=10pt,baselineskip=13pt,line_length=38zw,number_of_lines=39,head_space=15mm,headsep=3mm,headheight=5mm,footskip=10mm"]
 # A5の設定(9pt 38文字×37行) - 電子版
 # texdocumentclass: ["review-jsbook", "media=ebook,paper=a5,serial_pagination=true,openany,fontsize=9pt,baselineskip=13pt,line_length=38zw,number_of_lines=37,head_space=15mm,headsep=3mm,headheight=5mm,footskip=10mm"]
 #
@@ -463,11 +463,11 @@ pdfmaker:
   # optionsはキャプションなし囲みに対するtcolorboxの追加・上書きオプション
   # options_with_captionはキャプション付き囲みのtcolorboxの追加・上書きオプション（省略した場合はoptionsと同じ）
   #
-  # boxsetting:
-  #   note:
-  #     style: squarebox
-  #     options: "colback=black!5!white"
-  #     options_with_caption: "colbacktitle=black!25!white"
+  boxsetting:
+    note:
+      style: squarebox
+      options: "colback=black!5!white"
+      options_with_caption: "colbacktitle=black!25!white"
   #
   # pdfmaker:階層を使うものはここまで
 
